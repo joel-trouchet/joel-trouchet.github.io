@@ -77,7 +77,27 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h4 class="w3-opacity"><b>The University of Queensland</b></h4>
 		  <h6 class="w3-opacity"><b>Bachelor of Advanced Science (Honours)</b></h6>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>At The University of Queensland, I completed a specialization in Applied Mathematics with minors in Physics and Ecology & Conservation Biology. I am currently undertaking my honours under the guidance of <a href="https://about.uq.edu.au/experts/1931">Dr. Michael Forbes</a>, focusing on improving assembly line balancing problem implementations by applying constraint programming for faster optimal solutions.</p><br>
+          <p>I completed a specialization in Applied Mathematics with minors in Physics and Ecology & Conservation Biology. I am currently undertaking my honours under the guidance of <a href="https://about.uq.edu.au/experts/1931">Dr. Michael Forbes</a>, focusing on optimising assembly lines through the implementation constraint programming.</p><br>
+        </div>
+      </div>
+	  
+	  <div class="w3-container w3-card w3-white  w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-folder-open fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research Portfolio</h2>
+        <div class="w3-container">
+          <h4 class="w3-opacity"><b>Fibre-to-the-home passive optical distribution network design with splitting ratio decision</b></h4>
+		  <h6 class="w3-opacity"><b>Abstract (in progress)</b></h6>
+          <p>This study builds upon recent advances in the optimization of fiber-to-the-home (FTTH) passive optical distribution networks by extending the mixed-integer programming (MIP) framework proposed by <a href="https://doi.org/10.1002/net.22274">Agarwal and Jayaswal</a>. While their valid inequality and polar duality formulations significantly enhanced computational performance over straight mixed-integer linear programming (MILP), my implementation leverages Gurobi’s general cutting-plane algorithm to achieve further speed-ups. Additionally, I introduce a novel "choose-r" formulation, allowing each splitter to dynamically select its splitting ratio rather than being restricted to predefined types. This added flexibility improves cost minimisation but introduces computational complexity. Preliminary results demonstrate that despite increased solution times relative to our baseline MILP, the "choose-r" model remains significantly faster and more scalable than the original solutions presented in the reference paper, while also further minimising objective values (cost), offering a promising direction for adaptive splitter design in large-scale FTTH networks.</p>
+        </div>
+		<div class="w3-container">
+          <h4 class="w3-opacity"><b>A constraint programming approach to solving assembly line balancing problems</b></h4>
+		  <h6 class="w3-opacity"><b>Abstract (in progress)</b></h6>
+          <p>This project investigates the use of constraint programming (CP) for solving assembly line balancing problems (ALBPs). ALBPs are a class of combinatorial optimisation problems central to manufacturing systems, where the goal is to assign tasks to stations along an assembly line while respecting precedence constraints and other operational requirements. The study focuses on several established ALBP variants, in both Type-1 (minimising workstation allocation) and Type-2 (minimising cycle time) forms. Heuristic methods are often chosen to accelerate solutions to these problems, however my goal is to implement constraint programming as an alternative exact method to mixed-integer linear programming (MILP). Preliminary results indicate that CP significantly outperforms MILP formulations in ALBP variants that involve a large number of scheduling constraints, such as those requiring explicit task start and finish times, human-robot collaboration, synchronisation and zoning restrictions. In these settings, CP's inherent ability to model temporal and combinatorial relationships without relying on big-M constraints offers substantial advantages over MILP.</p>
+        </div>
+		<div class="w3-container">
+          <h4 class="w3-opacity"><b><a href="Portfolio Files/A robust approach to food aid supply chain optimisation for minimising nutrient deficit.pdf" class="image fit" style="text-decoration:none">A robust approach to food aid supply chain optimisation for minimising nutrient deficit</a></b></h4>
+		  <h6 class="w3-opacity"><b>Abstract</b></h6>
+          <p>In this project, we implemented and extended three linear optimization models from <a href="https://doi.org/10.1016/j.ejor.2024.04.034">de Moor et al. (2024)</a> to optimize food aid supply chains in Syria. The Nominal Optimization (NO), Robust Optimization (RO), and Pareto Robust Optimization (PRO) models were applied to minimize operational costs while meeting nutritional requirements in uncertain market conditions. We identified a key limitation in the original models, where nutrient shortfalls defaulted to the maximum allowed level. To improve this, we introduced blended objective functions that balanced cost reduction with shortfall minimization. Implementation was carried out in Python using Gurobi, with testing on historical market data. Our results showed that the NO model was computationally efficient and scalable, while the RO and PRO models presented challenges due to large matrix structures and non-convex quadratic constraints. This work offers a practical framework for NGOs to balance cost efficiency and nutritional adequacy in food aid planning.</p>
+		  <p>Coauthor: Alexander Hinchliffe</p><br>
         </div>
       </div>
     
@@ -96,7 +116,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
           <p>Since January 2024, I have been providing private tutoring in high school mathematics and physics. I currently tutor two students each week, creating personalized lesson plans and practice exercises to help them improve academically and develop strong problem-solving skills.</p>
           <hr>
-        </div>
+        </div>`
         <div class="w3-container">
           <h4 class="w3-opacity"><b>Ed's PCs</b></h4>
 		  <h6 class="w3-opacity"><b>Sales Representative and Crew Trainer</b></h6>
@@ -105,15 +125,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
       </div>
 	  
-	  <div class="w3-container w3-card w3-white  w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-folder-open fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research Portfolio</h2>
-        <div class="w3-container">
-          <h4 class="w3-opacity"><b><a href="Portfolio Files/A robust approach to food aid supply chain optimisation for minimising nutrient deficit.pdf" class="image fit" style="text-decoration:none">A robust approach to food aid supply chain optimisation for minimising nutrient deficit</a></b></h4>
-		  <h6 class="w3-opacity"><b>Abstract</b></h6>
-          <p>In this project, we implemented and extended three linear optimization models from <a href="https://doi.org/10.1016/j.ejor.2024.04.034">de Moor et al. (2024)</a> to optimize food aid supply chains in Syria. The Nominal Optimization (NO), Robust Optimization (RO), and Pareto Robust Optimization (PRO) models were applied to minimize operational costs while meeting nutritional requirements in uncertain market conditions. We identified a key limitation in the original models, where nutrient shortfalls defaulted to the maximum allowed level. To improve this, we introduced blended objective functions that balanced cost reduction with shortfall minimization. Implementation was carried out in Python using Gurobi, with testing on historical market data. Our results showed that the NO model was computationally efficient and scalable, while the RO and PRO models presented challenges due to large matrix structures and non-convex quadratic constraints. This work offers a practical framework for NGOs to balance cost efficiency and nutritional adequacy in food aid planning.</p>
-		  <p>Coauthor: Alexander Hinchliffe</p><br>
-        </div>
-      </div>
+	  
 
       
 
